@@ -84,7 +84,7 @@ Exploits:CreateToggle({
 ProximityPromptService.PromptButtonHoldBegan:Connect(function(prompt, player)
 	if instantInteractEnabled then
 		fireproximityprompt(prompt)
-	end
+	end,
 })
 -- 💣 Fling Section
 local FlingSection = Exploits:CreateSection("Fling")
@@ -102,9 +102,9 @@ local function getPlayerNames()
 		if p ~= LocalPlayer then
 			table.insert(names, p.Name)
 		end
-	end
+	end,
 	return names
-end
+})
 
 -- 👤 Player Dropdown
 local PlayerDropdown = Exploits:CreateDropdown({
@@ -143,10 +143,10 @@ local function flingPlayer(targetName)
 			Thrust.Location = target.Character.HumanoidRootPart.Position
 			RunService.Heartbeat:Wait()
 		end
-	end)()
+	end,
 
 	flungPlayers[targetName] = true
-end
+})
 
 -- 🎯 Fling Selected Button
 Exploits:CreateButton({
@@ -250,6 +250,6 @@ Exploits:CreateSlider({
 	Callback = function(Value)
 		smoothness = Value
 	end
-})
+end
 	
 
