@@ -10,7 +10,7 @@ local Window = Rayfield:CreateWindow({
 		FolderName = nil,
 		FileName = "Sora-Hub"
 	},
-	KeySystem = true,
+	KeySystem = false,
 	KeySettings = {
 		Title = "Sora-Hub universal script",
 		Subtitle = "Key Required",
