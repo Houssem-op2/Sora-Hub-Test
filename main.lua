@@ -18,7 +18,7 @@ local Window = Rayfield:CreateWindow({
 		FileName = "Sora-Hub",
 		SaveKey = false,
 		GrabKeyFromSite = true,
-		Key = "https://loot-link.com/s?0raUATlv"-- Lootlink pastebin key
+		Key = "https://pastebin.com/MjBBc3t2"-- Lootlink pastebin key
 	}
 })
 
