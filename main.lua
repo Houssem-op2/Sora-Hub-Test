@@ -250,6 +250,6 @@ Exploits:CreateSlider({
 	Callback = function(Value)
 		smoothness = Value
 	end
-end)
+})
 	
 
